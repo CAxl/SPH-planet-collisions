@@ -91,12 +91,46 @@ plt.plot(x_k, P_k)
 plt.xlim((-0.4,0.4))
 plt.xlabel("x [m]")
 plt.ylabel("Pressure [N/m²]")
+plt.grid()
 plt.show()
 
 plt.plot(x_k, v_k)
 plt.xlabel("x [m]")
 plt.ylabel("Velocity [m/s]")
 plt.xlim((-0.4,0.4))
+plt.grid()
+plt.show()
+
+plt.plot(x_k, e_k)
+plt.xlabel("x [m]")
+plt.ylabel("Internal energy [J/kg]")
+plt.xlim((-0.4,0.4))
+plt.grid()
+plt.show()
+
+
+fig, axs = plt.subplots(4,1,figsize=(8,8))
+(ax_v, ax_rho, ax_p, ax_e) = axs
+
+scat_v   = ax_v.scatter(x_k, v_k, s=12)
+scat_rho = ax_rho.scatter(x_k, rho_k, s=12)
+scat_p   = ax_p.scatter(x_k, P_k, s=12)
+scat_e   = ax_e.scatter(x_k, e_k, s=12)
+
+
+for ax in axs.flat:
+    ax.set_xlim(-0.4, 0.4)
+    ax.set_ylim(0, 1.2)
+    ax.grid()
+
+axs.flat[-1].set_ylim(1,2.8)
+
+ax_v.set_ylabel("Velocity [m/s]")
+ax_rho.set_ylabel("Density [kg/m³]")
+ax_p.set_ylabel("Pressure [N/m²]")
+ax_e.set_ylabel("Internal energy [J/kg]")
+
+ax_e.set_xlabel("x [m]")
 plt.show()
 
 
@@ -123,7 +157,6 @@ ax_rho.set_ylabel("Density [kg/m³]")
 ax_p.set_ylabel("Pressure [N/m²]")
 ax_e.set_ylabel("Internal energy [J/kg]")
 
-ax_p.set_xlabel("x [m]")
 ax_e.set_xlabel("x [m]")
 
 
