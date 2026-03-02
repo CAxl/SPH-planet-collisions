@@ -1,6 +1,18 @@
-# Differential equations in astrophysics
-This is a template repository for the project: Differential Equations in Astrophysics.
+# SPH for Planet Collisions
 
-You should clone this repository and write your code in a merge request. Here you should also upload the report pdf.
+## What's in this repo
 
-One merge request per group. Make sure *that your names are clearly visible* on the front page and title of the merge request.
+
+
+## Planet Collisions
+
+<video width="320" height="240" controls>
+
+  <source src="./results/planet300_collision1.mp4" type="video/mp4">
+  
+</video>
+
+
+
+
+
