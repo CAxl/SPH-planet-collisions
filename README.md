@@ -17,14 +17,29 @@ Welcome! This repository contains my DEs-in-Astrophysics project in the course "
   - List of figures and videos showing different simulation runs
 
 
-## Sod shock
+## Quick commands
+```bash
+commands to installl requirements
+```
+
+
+## Background on SPH
+
+
+
+## Implementation details
+
+
+
+## Results
+### Sod shock
 
 
 https://github.com/user-attachments/assets/49a245ca-98e8-4e27-a4ae-007700c704f5
 
 
 
-## Planet Collisions
+### Planet Collisions
 
 
 https://github.com/user-attachments/assets/383f91ad-89c5-47f0-be64-9fd2fb7350bf
